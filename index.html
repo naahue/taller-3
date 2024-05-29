@@ -12,7 +12,24 @@
 </head>
 
 <body>
-
+  <script>
+    window.addEventListener('mouseover', initLandbot, { once: true });
+    window.addEventListener('touchstart', initLandbot, { once: true });
+    var myLandbot;
+    function initLandbot() {
+      if (!myLandbot) {
+        var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+        s.addEventListener('load', function() {
+          var myLandbot = new Landbot.Livechat({
+            configUrl: 'https://storage.googleapis.com/landbot.site/v3/H-2498135-GEVXBJMWLSBPHHBA/index.json',
+          });
+        });
+        s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+    }
+    </script>
     <header>
         <nav class="navbar navbar-expand-md p-3 m-auto">
             <div class="container-fluid">
@@ -129,7 +146,7 @@
               <span class="card-title">Air Force 1 Mushroom</span>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloremque ratione quo repellendus similique beatae cumque eius rem corporis!</p>
               <a href="#modal-af1high" class="btn btn-primary" data-bs-toggle="modal">Comprar</a>
-              <span class="precio">US$170.00/AR$1.700.000</span>
+              <span class="precio">US$170.00/AR$170.000</span>
             </div>
 
             <div class="modal fade" id="modal-af1high" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
@@ -137,7 +154,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <h3 class="modal-title fs-5" id="modal1">Air Force 1 Mushroom</h3>
-                    <span class="precio">US$170.00/AR$1.700.000</span>
+                    <span class="precio">US$170.00/AR$170.000</span>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
 
@@ -221,7 +238,7 @@
               <span class="card-title">AF-1 Low SP Sequoia</span>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloremque ratione quo repellendus similique beatae cumque eius rem corporis! </p>
               <a href="#modal-af1low" class="btn btn-primary" data-bs-toggle="modal">Comprar</a>
-              <span class="precio">US$130.00/AR$1.300.000</span>
+              <span class="precio">US$130.00/AR$130.000</span>
             </div>
 
             <div class="modal fade" id="modal-af1low" tabindex="-1" aria-labelledby="modal2" aria-hidden="true">
@@ -229,7 +246,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <h3 class="modal-title fs-5" id="modal2">AF-1 Low SP Sequoia</h3>
-                    <span class="precio">US$130.00/AR$1.300.000</span>
+                    <span class="precio">US$130.00/AR$130.000</span>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
 
@@ -313,7 +330,7 @@
               <span class="card-title">Air Jordan 1 KO</span>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloremque ratione quo repellendus similique beatae cumque eius rem corporis!</p>
               <a href="#modal-airjordan1" class="btn btn-primary" data-bs-toggle="modal">Comprar</a>
-              <span class="precio">US$170.00/AR$1.700.000</span>
+              <span class="precio">US$170.00/AR$170.000</span>
             </div>
 
             <div class="modal fade" id="modal-airjordan1" tabindex="-1" aria-labelledby="modal3" aria-hidden="true">
@@ -321,7 +338,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <h3 class="modal-title fs-5" id="modal3">Air Jordan 1 KO</h3>
-                    <span class="precio">US$170.00/AR$1.700.000</span>
+                    <span class="precio">US$170.00/AR$170.000</span>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
 
@@ -405,7 +422,7 @@
               <span class="card-title">Alpha Force White and Red</span>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloremque ratione quo repellendus similique beatae cumque eius rem corporis!</p>
               <a href="#modal-alphaforce" class="btn btn-primary" data-bs-toggle="modal">Comprar</a>
-              <span class="precio">US$130.00/AR$1.300.000</span>
+              <span class="precio">US$130.00/AR$130.000</span>
             </div>
 
             <div class="modal fade" id="modal-alphaforce" tabindex="-1" aria-labelledby="modal4" aria-hidden="true">
@@ -413,7 +430,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <h3 class="modal-title fs-5" id="modal4">Alpha Force White and Red</h3>
-                    <span class="precio">US$130.00/AR$1.300.000</span>
+                    <span class="precio">US$130.00/AR$130.000</span>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
 
@@ -498,7 +515,7 @@
               <span class="card-title">Air Jordan 15</span>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloremque ratione quo repellendus similique beatae cumque eius rem corporis!</p>
               <a href="#modal-airjordan15" class="btn btn-primary" data-bs-toggle="modal">Comprar</a>
-              <span class="precio">US$190.00/AR$1.900.000</span>
+              <span class="precio">US$190.00/AR$190.000</span>
             </div>
 
 
@@ -507,7 +524,7 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <h3 class="modal-title fs-5" id="modal5">Air Jordan 15</h3>
-                    <span class="precio">US$190.00/AR$1.900.000</span>
+                    <span class="precio">US$190.00/AR$190.000</span>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
 
